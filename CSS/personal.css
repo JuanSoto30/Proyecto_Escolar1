@@ -1,0 +1,120 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.encabezado nav div img{
+    width: 30px;
+    border-radius: 50%;
+}
+.encabezado{
+    background-color: forestgreen;
+}
+.encabezado nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.encabezado nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.encabezado a {
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 12px 20px; 
+    display: block;
+}
+.encabezado a:hover{
+    background-color:gray;
+}
+.encabezado nav ul li ul {
+    display: flex;
+    flex-direction: column;
+}
+.encabezado nav ul li ul {
+    position: absolute;
+    background-color: forestgreen;
+
+}
+.encabezado nav ul li ul{
+    display: none;
+}
+.encabezado nav ul li:hover ul{
+    display: block;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0 20px;
+}
+.card{
+    display: flex;
+    width: 500px;
+    height: auto;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px 2px rgba(0,0,0,.2);
+}
+.header{
+    border-right: 1px solid #ddd;
+}
+.descripcion{
+    background: #fbfbfb;
+}
+.header, .descripcion{
+    padding: 20px;
+    text-align: center;
+}
+.header a{
+    position: relative;
+}
+.header img{
+    border-radius: 5%;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0,.06);
+    margin: 20px 30px;
+    transform: .2s;
+
+}
+.header a:hover img{
+    box-shadow: 0 0 0 8px rgba(0, 0, 0,.06);
+}
+.header h2{
+    color:#2E86C1;
+}
+.header h4{
+    margin-bottom: 20px;
+}
+.descripcion{
+    position: relative;
+}
+.descripcion p {
+    margin: 20px 30px;
+}
+. .descripcion .social{
+    margin-top: 25px;
+}
+.descripcion .social a{
+    display: inline-block;
+    padding: 0 15px;
+    color: #2E86C1;
+}
+@media(max-width:640px){
+    card-container{
+        display: block;
+        border: 0;
+    }
+    .header{
+        padding: 20px 20px 5px 20px;
+        border: none;
+    }
+    .descripcion{
+        padding: 5px 20px 20px 20px;
+        background: transparent;
+    }
+}
